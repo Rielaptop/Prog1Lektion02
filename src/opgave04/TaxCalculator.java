@@ -13,6 +13,7 @@ public class TaxCalculator {
 
     public static int calculateTax(int monthlyIncome) {
         int BASEDECUTION = 48_000;
+        double tax = 0.37;
         int yearlyIncome = monthlyIncome * 12;
         if (yearlyIncome <= 0) {
             return 0;
@@ -20,3 +21,4 @@ public class TaxCalculator {
         return -1;
     }
 }
+
